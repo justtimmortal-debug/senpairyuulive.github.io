@@ -1,0 +1,137 @@
+<body>
+  <section class="hero">
+    <h1>Hey, I'm Ryuu</h1>
+    <p class="sub">Gamer • Creator • Tech Lover</p>
+    <a href="#social" class="btn">Connect With Me</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Ryuu — gamer, creator, and always exploring tech.  
+      I make content, stream, and build fun stuff online.  
+      Welcome to my little zone 💙
+    </p>
+  </section>
+
+  <section class="social-section" id="social">
+    <h2>My Socials</h2>
+    <div class="social-links">
+
+      <a href="https://youtube.com/@senpairyuulive" target="_blank" class="social-card youtube">
+        <span>YouTube</span>
+      </a>
+
+      <a href="https://discord.gg/mqQPqmhGMz" target="_blank" class="social-card discord">
+        <span>Discord</span>
+      </a>
+
+      <a href="https://instagram.com/senpairyuulive" target="_blank" class="social-card instagram">
+        <span>Instagram</span>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with ❤️ by Ryuu</p>
+  </footer>
+</body>
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0a0a14, #1a1a2d);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.sub {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 12px 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #5865F2, #9aa3ff);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ABOUT */
+.about {
+  padding: 70px 20px;
+  text-align: center;
+}
+.about p {
+  opacity: 0.8;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* SOCIAL */
+.social-section {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.social-card {
+  width: 150px;
+  height: 150px;
+  border-radius: 22px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: 0.35s ease;
+  box-shadow: 0 0 18px rgba(255,255,255,0.1);
+  animation: float 3s ease-in-out infinite;
+}
+
+.social-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+/* Gradients */
+.youtube  { background: linear-gradient(135deg, #ff4242aa, #ff9a9aaa); }
+.discord  { background: linear-gradient(135deg, #5865F2aa, #9aa3ffaa); }
+.instagram { background: linear-gradient(135deg, #ff7a7aaa, #ffca85aa); }
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  opacity: 0.6;
+}
